@@ -171,18 +171,36 @@ footer {
 
 .participants-list {
   margin-top: 8px;
-  list-style: disc inside;
-  padding-left: 18px;
+  list-style: none;
+  padding: 0;
   background: #fff;
   border: 1px solid #eee;
   border-radius: 4px;
 }
 
 .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   padding: 8px 10px;
   border-bottom: 1px dashed #f0f0f0;
   font-size: 14px;
   color: #444;
+}
+
+.remove-btn {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .participants-list li:last-child {
